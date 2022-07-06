@@ -1,0 +1,19 @@
+.menuProfile{
+  border: solid 2px black;
+  border-radius: 10px;
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  padding: 20px;
+  background-color: beige;
+}
+.menuProfile ul{
+  list-style-type: none; /* Remove bullets */
+
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+}
+.menuProfile ul li{
+  margin-top:5px;
+  margin-bottom:5px;
+}
