@@ -2,6 +2,7 @@ import Tableaux from "./Tableaux";
 import './App.css';
 import {useState} from "react";
 import LoginSucessPanel from "./LoginSucessPanel";
+import NavBar from "./NavBar";
 
 export default function Home() {
     const array1 = [
@@ -240,6 +241,7 @@ export default function Home() {
 
     return (
         <div className="App">
+            <NavBar/>
             <header className="App-header">
                 <LoginSucessPanel/>
                 <Tableaux arr={(numeroChoisi===0 ? array1:numeroChoisi===2 ? array3 : array2)} titre={"TAB:" + (numeroChoisi+1)} num={numeroChoisi}/>

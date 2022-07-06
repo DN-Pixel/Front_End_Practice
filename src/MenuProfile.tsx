@@ -1,4 +1,4 @@
-import './MenuProfile.scss'
+import './MenuProfile.css'
 
 function MenuProfile (){
     let name = "jean Du Pont"
@@ -6,8 +6,8 @@ function MenuProfile (){
         <div className={'menuProfile'}>
             <ul>
                 <li>{name}</li>
-                <li><a href={''}>Back To APP</a></li>
-                <li><a href={''}>Admin Page</a></li>
+                <li><a href={'/'}>Back To APP</a></li>
+                <li><a href={'/'}>Admin Page</a></li>
                 <li><button onClick={setMaintenanceMode}>Maintenance Mode</button></li>
             </ul>
         </div>

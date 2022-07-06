@@ -1,9 +1,9 @@
 .navBar {
   width: 100%;
-  background-color: sandybrown;
+  background-color: rgba(244, 164, 96, 0.56);
   position: fixed;
   left: 0;
-  margin-top: -85px;
+
   border-bottom: solid 3px saddlebrown;
   border-top: solid 3px saddlebrown;
   align-items: center;

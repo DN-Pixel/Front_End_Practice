@@ -16,7 +16,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url("./IMG/tumblr_d44f67d4484b7eb51eb382e3a9b9eda4_1078a2a1_1280.jpg");
+  background-size: 1900px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
