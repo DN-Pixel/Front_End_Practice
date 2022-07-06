@@ -1,11 +1,15 @@
 .menuProfile{
-  border: solid 2px black;
+  border: solid 3px saddlebrown;
   border-radius: 10px;
   position: absolute;
   right: 5px;
   top: 25px;
   padding: 20px;
-  background-color: beige;
+  color: white;
+  background-color: rgba(244, 164, 96, 0.9);
+}
+.menuProfile a{
+  color: #d7defa;
 }
 .menuProfile ul{
   list-style-type: none; /* Remove bullets */

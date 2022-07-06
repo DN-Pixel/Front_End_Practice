@@ -6,7 +6,6 @@ function hello(nom : String){
 
 export default function Tableaux(props : any){
     const tout :any = Object.values(props)[0];
-    console.log(props.arr)
     const dataArrValueNames : any = Object.keys(props.arr[0]);
     return(
 

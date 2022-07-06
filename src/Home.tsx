@@ -254,4 +254,10 @@ export default function Home() {
     );
 }
 
+//todo normalement jaurai l'array dans un
+// go full prop drilling dans les array state ou un bail dugenre et hop ca load larray en fonction de la request
+//todo trouver un moyen de changer la request en cliquant dans les colonnes sur l'array : "context provider"
+// et ajouter 'asc' 'desc' a coté des olonnes X quand c'est trié par la-dite colonne X
+
+
 
