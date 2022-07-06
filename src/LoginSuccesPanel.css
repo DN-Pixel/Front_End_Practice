@@ -1,0 +1,9 @@
+.panel{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    background-image: url("IMG/imIN.png");
+    padding: 40px;
+    color: white;
+    background-repeat: repeat;
+}

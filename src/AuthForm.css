@@ -1,0 +1,31 @@
+.container{
+    position: fixed;
+    padding-top : 20%;
+    padding-bottom : 20%;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: url("IMG/wp10471335-minecraft-forest-wallpapers.png");
+    background-size: 1900px;
+    color: white;
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.container form input{
+    padding: 25px;
+    margin: 10px;
+    border : solid 2px saddlebrown;
+    background-color: sandybrown;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
