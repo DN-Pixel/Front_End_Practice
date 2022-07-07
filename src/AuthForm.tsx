@@ -47,4 +47,8 @@ function AuthForm(){
 
 export default AuthForm
 
+//en jsc les form par default sont en get, ducoup si vous foirez un login ca va non seulement refresh la page
+// avec le nouveau lien mais en plus afficher le mdp que zavez mis genre.
+//ce qui peut poser enormément de probleme si vous srteamer genre et que zetiez juste en caps lock.
+
 

@@ -3,7 +3,10 @@ import './App.css';
 import {useState} from "react";
 import LoginSucessPanel from "./LoginSucessPanel";
 import NavBar from "./NavBar";
-
+//ca c'est ma fusée
+// << ------------\
+// << |||     O    }>
+// << ------------/
 export default function Home() {
     const array1 = [
         {name : 'oui',
@@ -244,10 +247,10 @@ export default function Home() {
             <NavBar/>
             <header className="App-header">
                 <LoginSucessPanel/>
-                <Tableaux arr={(numeroChoisi===0 ? array1:numeroChoisi===2 ? array3 : array2)} titre={"TAB:" + (numeroChoisi+1)} num={numeroChoisi}/>
+                <Tableaux arr={(numeroChoisi===0 ? array1:numeroChoisi===1 ? array2 : array3)} titre={"TAB:" + (numeroChoisi+1)} num={numeroChoisi}/>
                 <div className={'ArrayOptionsButtons'}>
-                <button onClick={()=>updatenum(numeroChoisi===0?0:numeroChoisi-1)}>Précedent</button>
-                <button onClick={()=>updatenum(numeroChoisi===2?2:numeroChoisi+1)}>Suiviant</button>
+                <button onClick={()=>updatenum((((numeroChoisi-1)%3)+3)%3)}>Précedent</button>
+                <button onClick={()=>updatenum((numeroChoisi+1)%3)}>Suiviant</button>
                 </div>
             </header>
         </div>

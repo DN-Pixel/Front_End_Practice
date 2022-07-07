@@ -5,6 +5,8 @@ import './NavBar.css'
 const logo = require('./IMG/logo-ign.png');
 const SignInLogo = require('./IMG/iconLogin.png');
 
+//todo export the h3 line 29 into another
+// element memoed so thatte fuction doesnt refresh on every single click on the profile pic.
 function NavBar (){
     const [menuIsVisible, setMenuVisible] = useState(false)
     const toggleMenuVisibility = () => {
@@ -26,7 +28,7 @@ function NavBar (){
             <h3>Generated last 24H :<br/>{count}</h3>
             <Link to="/info">See more infos</Link>
             {(window.location.href).includes('info') ? '':<button><Link to={'/'}>More info</Link></button>}
-            <div className={'logoutLOGO'} onClick={()=> openMenuProfile}>
+            <div className={'logoutLOGO'}>
                 <img src={SignInLogo} onClick={toggleMenuVisibility} alt={'Profile Icon'}></img>
                 {menuIsVisible ? <MenuProfile/> : <div/>}
             </div>
@@ -35,8 +37,5 @@ function NavBar (){
 }
 //todo  put this line 22 when info done:
 // {(window.location.href).includes('info') ? '':<button><Link to={'/info'}>More info</Link></button>}
-function openMenuProfile(){
-
-}
 export default memo(NavBar);
 //todo pixel note : indeed memo is necessary so we dont spam request as soon as we refresh anything on the page
