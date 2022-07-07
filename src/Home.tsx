@@ -3,6 +3,7 @@ import './App.css';
 import {useState} from "react";
 import LoginSucessPanel from "./LoginSucessPanel";
 import NavBar from "./NavBar";
+import TodoApp from "./TodoApp";
 //ca c'est ma fusée
 // << ------------\
 // << |||     O    }>
@@ -251,6 +252,7 @@ export default function Home() {
                 <div className={'ArrayOptionsButtons'}>
                 <button onClick={()=>updatenum((((numeroChoisi-1)%3)+3)%3)}>Précedent</button>
                 <button onClick={()=>updatenum((numeroChoisi+1)%3)}>Suiviant</button>
+                    <TodoApp/>
                 </div>
             </header>
         </div>
