@@ -12,6 +12,8 @@ function NavBar (){
     const toggleMenuVisibility = () => {
         setMenuVisible(menuIsVisible === false ? true : false);
     };
+
+    //todo generated last 24 hour, compter le nombre de ligne dans la requete head
     const[count, setCount] = useState(0);
 
     useEffect(() => {

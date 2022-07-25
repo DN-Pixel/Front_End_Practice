@@ -3,10 +3,11 @@ import './App.css';
 import {useState} from "react";
 import LoginSucessPanel from "./LoginSucessPanel";
 import NavBar from "./NavBar";
-import TodoApp from "./TodoApp";
 export default function Home() {
     const array1 = [
-        {name : 'oui',
+        {
+            id:1,
+            name : 'oui',
             age : 45,
             taille:180,
             a: 15,
@@ -21,7 +22,9 @@ export default function Home() {
             56:45,
             test:'encorev1'
         },
-        {name:'non',
+        {
+            id:2,
+            name:'non',
             age :20,
             taille:190,
             a: 17,
@@ -36,7 +39,9 @@ export default function Home() {
             56:5445,
             test:'encorev2'
         },
-        {name : 'oui',
+        {
+            id:3,
+            name : 'oui',
             age : 45,
             taille:180,
             a: 15,
@@ -51,7 +56,9 @@ export default function Home() {
             56:45,
             test:'encorev3'
         },
-        {name:'non',
+        {
+            id:4,
+            name:'non',
             age :20,
             taille:190,
             a: 17,
@@ -68,7 +75,9 @@ export default function Home() {
         }
     ]
     const array3= [
-        {name : 'oui',
+        {
+            id:75,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -83,7 +92,9 @@ export default function Home() {
             56:452,
             test:'encorev155'
         },
-        {name:'non',
+        {
+            id:76,
+            name:'non',
             age :44,
             taille:120,
             a: 17,
@@ -100,7 +111,9 @@ export default function Home() {
         }
     ]
     const array2= [
-        {name : 'oui',
+        {
+            id:7,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -115,7 +128,9 @@ export default function Home() {
             56:452,
             test:'encorev55'
         },
-        {name : 'oui',
+        {
+            id:8,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -130,7 +145,9 @@ export default function Home() {
             56:452,
             test:'encorev56'
         },
-        {name : 'oui',
+        {
+            id:9,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -145,7 +162,9 @@ export default function Home() {
             56:452,
             test:'encorev57'
         },
-        {name : 'oui',
+        {
+            id:10,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -160,7 +179,9 @@ export default function Home() {
             56:452,
             test:'encorev58'
         },
-        {name : 'oui',
+        {
+            id:11,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -175,7 +196,9 @@ export default function Home() {
             56:452,
             test:'encorev59'
         },
-        {name : 'oui',
+        {
+            id:12,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -190,7 +213,9 @@ export default function Home() {
             56:452,
             test:'encorev60'
         },
-        {name : 'oui',
+        {
+            id:13,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -205,7 +230,9 @@ export default function Home() {
             56:452,
             test:'encorev61'
         },
-        {name : 'oui',
+        {
+            id:14,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -220,7 +247,9 @@ export default function Home() {
             56:452,
             test:'encorev62'
         },
-        {name : 'oui',
+        {
+            id:15,
+            name : 'oui',
             age : 2,
             taille:18,
             a: 5,
@@ -248,7 +277,6 @@ export default function Home() {
                 <div className={'ArrayOptionsButtons'}>
                 <button onClick={()=>updatenum((((numeroChoisi-1)%3)+3)%3)}>Précedent</button>
                 <button onClick={()=>updatenum((numeroChoisi+1)%3)}>Suiviant</button>
-                    <TodoApp/>
                 </div>
             </header>
         </div>
