@@ -4,10 +4,6 @@ import {useState} from "react";
 import LoginSucessPanel from "./LoginSucessPanel";
 import NavBar from "./NavBar";
 import TodoApp from "./TodoApp";
-//ca c'est ma fusée
-// << ------------\
-// << |||     O    }>
-// << ------------/
 export default function Home() {
     const array1 = [
         {name : 'oui',
@@ -238,7 +234,7 @@ export default function Home() {
             15:350,
             56:452,
             test:'encorev63'
-        },
+        }
     ]
 
     const [numeroChoisi,updatenum] = useState(0);

@@ -8,14 +8,12 @@ export default function App() {
     return (
     <div className="App">
         <Router>
-
             <div>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/login" element={<AuthForm/>}/>
                     <Route path="*" element={<NoPage />} />
                 </Routes>
-
             </div>
         </Router>
     </div>
